@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "A useless slackbot",
   "main": "index.js",
+  "scripts": {
+  "start": "node index.js"
+  },
   "directories": {
     "example": "examples"
   },

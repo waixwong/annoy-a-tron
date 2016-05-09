@@ -7,7 +7,7 @@
   "start": "node index.js"
   },
   "directories": {
-    "example": "examples"
+    "src": "src"
   },
   "dependencies": {
     "dotenv": "^2.0.0",

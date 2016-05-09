@@ -1,34 +1,37 @@
 {
-  "name": "botkit-middleware-witai",
-  "version": "0.0.2",
-  "description": "A middleware for using Wit.ai in a Botkit-powered bot",
-  "main": "src/botkit-middleware-witai.js",
-  "scripts": {
-    "start": "node src/botkit-middleware-witai.js",
-    "pretest": "jscs ./"
+  "name": "annoy-a-tron",
+  "version": "0.0.0",
+  "description": "A useless slackbot",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/howdyai/botkit-middleware-witai.git"
-  },
-  "keywords": [
-    "botkit",
-    "wit.ai",
-    "slack"
-  ],
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/howdyai/botkit-middleware-witai/issues"
-  },
-  "homepage": "https://github.com/howdyai/botkit-middleware-witai#readme",
   "dependencies": {
+    "dotenv": "^2.0.0",
     "botkit": "^0.1.1",
-    "node-wit": "^2.0.0",
+    "help": "^2.1.2",
+    "jscs": "^3.0.3",
+    "node-wit": "^3.3.0",
     "request": "^2.72.0",
     "unirest": "^0.4.2"
   },
-  "devDependencies": {
-    "jscs": "^2.8.0"
-  }
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waixwong/annoy-a-tron.git"
+  },
+  "keywords": [
+    "slackbot",
+    "wit.ai",
+    "bot"
+  ],
+  "author": "WW",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/waixwong/annoy-a-tron/issues"
+  },
+  "homepage": "https://github.com/waixwong/annoy-a-tron#readme"
 }

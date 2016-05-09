@@ -19,6 +19,15 @@ function welcome(bot, message) {
     });
 }
 
+controller.hears(['hello', 'hi'], ['direct_mention'], function (bot, message) {
+    bot.replyWithTyping(message, 'Hello.');
+});
+
+controller.hears(['hello', 'hi'], ['direct_message'], function (bot, message) {
+    bot.replyWithTyping(message, 'Hello.');
+    bot.replyWithTyping(message, 'It\'s nice to talk to you directly.');
+});
+
 // tell a joke
 controller.hears(['joke'], ['direct_message', 'direct_mention'], function (bot, message) {
     request('http://api.icndb.com/jokes/random', function (error, response, body) {
@@ -35,15 +44,15 @@ controller.hears(['joke'], ['direct_message', 'direct_mention'], function (bot, 
 controller.hears(['cool'], ['ambient', 'direct_message'], function (bot, message) {
     bot.replyWithTyping(message, {
         text: "Cool beans!",
-        username: "Marin",
+        username: "marin",
         icon_url: "https://s-media-cache-ak0.pinimg.com/736x/8f/4d/74/8f4d74b4ce40a8a30ee95bf142be8650.jpg"
     });
 });
 
 controller.hears(['awesome'], ['ambient', 'direct_message'], function (bot, message) {
     bot.replyWithTyping(message, {
-        text: "Awesome sauce",
-        username: "Marin",
+        text: "Awesome sauce!",
+        username: "marin",
         icon_url: "http://brainfoodtv.com/site/wp-content/uploads/2013/09/awesome_sauce_by_goblinworkshop-d61aykm.jpg"
     });
 });

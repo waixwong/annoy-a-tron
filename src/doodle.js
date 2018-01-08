@@ -66,7 +66,3 @@ controller.on(['direct_mention'], function (bot, message) {
 controller.hears(['marin'], ['ambient'], function (bot, message) {
     bot.replyWithTyping(message, 'Here!:raising_hand:');
 });
-
-controller.hears(['fuck', 'shit'], ['ambient'], function (bot, message) {
-    bot.replyWithTyping(message, 'wtf <@' + message.user + '>, Your language! :scream:');
-});
